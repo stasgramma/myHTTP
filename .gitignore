@@ -1,0 +1,20 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go vendor
+/vendor/
+
+# Environment
+.env
+
+# IDE stuff
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
