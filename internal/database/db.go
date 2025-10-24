@@ -16,7 +16,7 @@ func Connect(cfg *config.Config) {
 	var err error
 	DB, err = gorm.Open(postgres.Open(cfg.GetDSN()), &gorm.Config{})
 	if err != nil {
-		log.Fatalf("❌ Error: Gorm.Open: %v", err)
+		log.Fatalf("Error: Gorm.Open: %v", err)
 	}
 
 	sqlDB, err := DB.DB()
