@@ -35,8 +35,8 @@ func InitMinio(cfg *config.Config) {
 		if err := client.MakeBucket(ctx, cfg.MinIO.Bucket, minio.MakeBucketOptions{}); err != nil {
 			log.Fatalf("Error creating MinIO bucket: %v", err)
 		}
-		log.Printf("🪣 Created bucket: %s\n", cfg.MinIO.Bucket)
+		log.Printf("Created bucket: %s\n", cfg.MinIO.Bucket)
 	} else {
-		log.Printf("🪣 Bucket '%s' already exists\n", cfg.MinIO.Bucket)
+		log.Printf("Bucket '%s' already exists\n", cfg.MinIO.Bucket)
 	}
 }
