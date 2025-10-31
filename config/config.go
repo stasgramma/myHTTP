@@ -18,7 +18,7 @@ type Config struct {
 	// === MinIO ===
 	MinIO MinIOConfig
 
-	// === Server ===
+	// == Server ===
 	Port string
 }
 
