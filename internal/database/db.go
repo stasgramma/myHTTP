@@ -29,6 +29,8 @@ func Connect(cfg *config.Config) {
 		&models.Product{},
 		&models.ProductTranslation{},
 		&models.ProductImage{},
+		&models.Category{},            // ✅ добавили
+		&models.CategoryTranslation{}, // ✅ добавили
 	)
 	if err != nil {
 		log.Fatalf("Error on migration: %v", err)
